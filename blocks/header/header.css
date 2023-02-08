@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  min-height: 96px;
+  box-sizing: border-box;
+}
+/* @media (max-width: 320px) {
+  .header {
+    padding-top: 16px;
+  }
+} */
+.header__logo {
+  width: 157px;
+  height: 76px;
+}
+.header__img {
+  width: 100%;
+}
+.header__button {
+  margin: 18px 0;
+  width: 351px;
+  height: 40px;
+  border: 1px solid #1D1D1B;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1D1D1B;
+  padding: 7px 32px;
+}

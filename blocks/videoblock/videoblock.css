@@ -1,0 +1,45 @@
+.videoblock {
+  padding: 128px 0;
+}
+.videoblock__information {
+  display: flex;
+  gap: 24px;
+  height: 708px;
+}
+.videoblock__video {
+}
+.videoblock__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.videoblock__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #BC625C;
+  margin-bottom: 8px;
+}
+.videoblock__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #1D1D1B;
+  margin-bottom: 16px;
+}
+.videoblock__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1D1D1B;
+  margin-bottom: 56px;
+}
+.button {
+}
+.button-content {
+}
+.button-content__text {
+}

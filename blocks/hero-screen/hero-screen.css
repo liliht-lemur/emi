@@ -1,0 +1,59 @@
+.hero-screen {
+  padding: 79px 0;
+}
+.hero-screen__information {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 64px;
+}
+.hero-screen-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-screen__subtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #BC625C;
+}
+.hero-screen__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #1D1D1B;
+}
+.hero-screen__title_pink {
+  color: #BC625C;
+}
+.hero-screen__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1D1D1B;
+}
+.hero-screen__benefits {
+  display: flex;
+  gap: 58px;
+}
+.hero-screen__item-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #BC625C;
+}
+.hero-screen__item-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1B;
+}
