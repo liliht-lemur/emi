@@ -52,12 +52,12 @@
   width: 138%;
 } */
 
-.wrapp {
+.wrap {
   display: flex;
   max-width: 151px;
   max-height: 151px ;
 }
-.wrapp svg {
+.wrap svg {
   fill: currentColor;
   height: auto;
   transform-origin: center;
