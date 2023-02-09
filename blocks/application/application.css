@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+} 
 .application {
   padding: 130px 0;
 }
@@ -5,8 +13,6 @@
   background: #F2DDDE;
   border-radius: 24px;
   padding: 56px 32px;
-
-
 }
 .wrapper {
   display: flex;
@@ -56,14 +62,6 @@
   transform-origin: center;
   width: 100%;
 }
-@keyframes rotation {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-} 
 .rotate {
   animation-name: rotation;
   animation-duration: 10s;

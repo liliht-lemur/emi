@@ -22,8 +22,7 @@
   padding: 64px 62px 56px;
   border: 1px solid #4B5563;
   border-radius: 16px;
-  /* width: 600px; */
-  margin: 0 6px;
+  /* margin: 0 6px; */
   box-sizing: border-box;
 }
 .feedback__text {
@@ -53,4 +52,10 @@
   display: block;
   margin-top: 104px;
 }
+div.slick-slide.slick-active.slick-current > .feedback__item {
+  margin-right: 12px;
+}
 
+div.slick-slide.slick-active:nth-child(2) > .feedback__item {
+  margin-left: 12px;
+}
