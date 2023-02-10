@@ -64,18 +64,19 @@
 .education__lesson-title {
   margin: 0;
   padding-left: 40px;
-  padding-top: 14px;
+  /* padding-top: 14px; */
   font-weight: 400;
   font-size: 36px;
   line-height: 43.2px;
   color: #1D1D1B;
-  margin-bottom: 44px;
+  /* margin-bottom: 44px; */
 }
 .education__lesson-title span {
   text-transform: uppercase;
 }
 .education__lesson-content {
-  display: flex;
+  display: none;
+  /* display: flex; */
   gap: 73px;
   margin-bottom: 32px;
 }
@@ -127,65 +128,35 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  height: 126px;
+  align-items: center;
 }
-
-/* .plus {
+.closeModal {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 18px;
+  align-items: center;
+  position: absolute;
+  /* top: 18px; */
   right: 18px;
   width: 32px;
   height: 32px;
   border: 2px solid #BC625C;
   border-radius: 50%;
 }
-.plus::before {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 18px; 
-  height: 2px;
-  background-color: #BC625C;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.plus::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 18px;
-  background-color: #BC625C;
-  top: 25%;
-  transform: translateY(-1px);
-}  */
-.closeModal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	position: absolute;
-	top: 18px;
-	right: 18px;
-	width: 32px;
-	height: 32px;
-  border: 2px solid #BC625C;
-  border-radius: 50%;
-}
 .closeModal::before,
 .closeModal::after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 16px;
-	height: 2px;
-	background: #BC625C;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #BC625C;
 }
 
 .closeModal::before {
-	transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .closeModal::after {
-	transform: rotate(0deg);
+  transform: rotate(0deg);
 }
