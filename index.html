@@ -120,9 +120,9 @@
           </div>
           <div class="education__lesson">
             <div class="plus__wrapper">
-              <h2 class="education__lesson-title headlines"><span>Урок 1-2.</span> Техники выполнения мужского маникюра –
-                2 варианта
-              </h2> 
+              <h2 class="education__lesson-title headlines"><span>Урок 1-2.</span> Техники выполнения мужского маникюра
+                - 2 варианта
+              </h2>
               <div class="closeModal"></div>
               <!-- <div class="plus"></div> -->
             </div>
@@ -481,25 +481,25 @@
               <div class="application__content">
                 <p class="application__subtitle headlines">Чтобы получить бонусы</p>
                 <h2 class="application__title headlines">Начните обучение прямо сейчас</h2>
-                <p class="application__text description">Станьте экспертом в сфере мужского art маникюра всего за 1 день! <br>Для
+                <p class="application__text description">Станьте экспертом в сфере мужского art маникюра всего за 1
+                  день! <br>Для
                   этого заполните форму и нажмите на кнопку.</p>
               </div>
               <div class="application__price">
                 <div class="wrap">
                   <svg class="rotate" viewBox="0 0 150 150" width="150" height="150">
-                      <defs>
-                          <path id="circle"
-                                d="
+                    <defs>
+                      <path id="circle" d="
                       M 75, 75
                       m -65, 0
                       a 65,65 0 1,1 130,0
-                      a 65,65 0 1,1 -130,0"/>
-                      </defs>
-                      <text font-size="10">
-                          <textPath xlink:href="#circle" startOffset="0%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
-                          <textPath xlink:href="#circle" startOffset="33%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
-                          <textPath xlink:href="#circle" startOffset="66%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
-                      </text>
+                      a 65,65 0 1,1 -130,0" />
+                    </defs>
+                    <text font-size="10">
+                      <textPath xlink:href="#circle" startOffset="0%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
+                      <textPath xlink:href="#circle" startOffset="33%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
+                      <textPath xlink:href="#circle" startOffset="66%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
+                    </text>
                   </svg>
                   <div class="application__sum">
                     <p class="application__count headlines">2500</p>
@@ -508,35 +508,164 @@
                 </div>
               </div>
             </div>
-
             <div class="application__purchase">
-
+              <form class="feed-form" action="#">
+                <div class="feed-form__item">
+                  <label class="before headlines" for="name">Имя</label>
+                  <input class="description" id="name" name="name" required placeholder="Ваше имя" type="text">
+                  <label class="after description" for="name">Это подсказка по работе формы</label>
+                  <img src="./icon/icon-user (2).svg" alt="Иконка" class="left">
+                  <img src="./icon/icon-help-circle.svg" alt="Иконка" class="right">
+                </div>
+                <div class="feed-form__item">
+                  <label class="before headlines" for="phone">Телефон</label>
+                  <input class="description" id="phone" name="phone" required placeholder="Ваш телефон" type="number">
+                  <label class="after description" for="name">Это подсказка по работе формы</label>
+                  <img src="./icon/icon-phone.svg" alt="Иконка" class="left">
+                  <img src="./icon/icon-help-circle.svg" alt="Иконка" class="right">
+                </div>
+                <div class="feed-form__item">
+                  <label class="before headlines" for="email">Email</label>
+                  <input class="description" id="email" name="email" required placeholder="Ваш E-mail" type="email">
+                  <label class="after description" for="name">Это подсказка по работе формы</label>
+                  <img src="./icon/icon-mail.svg" alt="Иконка" class="left">
+                  <img src="./icon/icon-help-circle.svg" alt="Иконка" class="right">
+                </div>
+                <button class="button button_small button_submit headlines">
+                  <div class="button-content">
+                    <p class="button-content__text">Хочу на курс</p>
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 15H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M15.75 9.75L21 15L15.75 20.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+              </form>
+              <p class="agreement description">Нажимая на кнопку, я соглашаюсь на обработку Персональных данных и с
+                Правилами пользования Платформой</p>
             </div>
           </div>
-        </section>
+        </section 
+      </main>
+        <footer class="footer">
+          <div class="footer__wrapper">
+            <div class="contacts">
+              <div class="contact__item">
+                <h2 class="contact__title headlines">8 (800) 123-45-67</h2>
+                <p class="contact__descr description">контактный центр</p>
+              </div>
+              <div class="contact__item">
+                <h2 class="contact__title headlines">8 (800) 123-45-67</h2>
+                <p class="contact__descr description">контактный центр</p>
+              </div>
+              <p class="contact__address description">Москва, Ленинский проспект, дом 6,<br> строение 20</p>
+            </div>
+            <nav class="footer__direction">
+              <h2 class="footer__title headlines">Все направления</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Программирование</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Дизайн</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Маркетинг</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Управление</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Игры</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Кино и Музыка</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Психология</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Общее развитие</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Инженерия</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Английский язык</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Другое</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__about">
+              <h2 class="footer__title headlines">Об Emi</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Программирование</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Дизайн</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Маркетинг</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Управление</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Игры</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Кино и Музыка</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Психология</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Общее развитие</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Инженерия</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Английский язык</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Другое</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__vebinar">
+              <h2 class="footer__title headlines">Наши вебинары</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Программирование</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Дизайн</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Маркетинг</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Управление</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Игры</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Кино и Музыка</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Психология</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Общее развитие</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Инженерия</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Английский язык</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Другое</a></li>
+              </ul>
+            </nav>
+            <nav class="footer__useful">
+              <h2 class="footer__title headlines">Полезное</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Медиа</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Партнёрская программа</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Корпоративным<br> клиентам</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Для работодателей</a></li>
+                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                    target="_blank">Реферальная программа</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copyright headlines">&#169; Emi 2022</p>
+            <p class="footer__cookie  description">Мы используем файлы cookie для персонализации сервисов и повышения удобства пользования<br> сайтом. Если вы не согласны на их использование, поменяйте настройки браузера.</p>
+          </div>
+        </footer>
       </div>
     </div>
-
-    <!-- <div class="closeModal"></div> -->
-
-      </main>
-    <footer class="footer wide-content">
-      <nav class="footer__menu">
-        <ul class="footer__list">
-          <li class="footer__list-item"><a href="https://yandex.ru/maps" class="footer__link link-hover"
-              target="_blank">Карты</a></li>
-          <li class="footer__list-item"><a href="https://yandex.ru/pogoda" class="footer__link link-hover"
-              target="_blank">Погода</a></li>
-          <li class="footer__list-item"><a href="https://rasp.yandex.ru" class="footer__link link-hover"
-              target="_blank">Расписание</a></li>
-          <li class="footer__list-item"><a href="https://calendar.yandex.ru" class="footer__link link-hover"
-              target="_blank">Календарь</a></li>
-          <li class="footer__list-item"><a href="https://travel.yandex.ru" class="footer__link link-hover"
-              target="_blank">Путешествия</a></li>
-        </ul>
-        <p class="footer__copyright">&#169; 2020. Liliht-lemur</p>
-      </nav>
-    </footer>
   </div>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

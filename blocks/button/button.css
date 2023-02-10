@@ -31,3 +31,10 @@
   font-size: 18px;
   line-height: 30px;
 }
+.button_submit {
+  width: 275px;
+  background: #1D1D1B;
+  border-radius: 40px;
+  color: #FFFFFF; 
+  margin-top: 55px;
+}
