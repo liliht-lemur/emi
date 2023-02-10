@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   $('.carousel__inner').slick(
     {
       dots: true,
@@ -11,7 +11,7 @@ $(document).ready(function(){
     }
   );
 });
-$(document).ready(function(){
+$(document).ready(function () {
   $('.carousel__feedback').slick(
     {
       dots: true,
@@ -21,5 +21,20 @@ $(document).ready(function(){
       slidesToShow: 2,
       slidesToScroll: 1
     }
-  ); 
-}); 
+  );
+});
+
+$(document).ready(function () {
+  document.querySelectorAll('.education__lesson').forEach(elem => {
+    elem.addEventListener('click', function () {
+      this.classList.toggle('education__lesson__active');
+
+      const actualContent = this.querySelector('.education__lesson-content');
+      if (actualContent) {
+        actualContent.classList.toggle('education__lesson-content__active');
+
+        this.querySelector('.closeModal').classList.toggle('closeModal__active');
+      }
+    });
+  });
+});
