@@ -7,7 +7,7 @@
        url("./inter-400.woff") format("woff");
 }*/
 
-@font-face {
+/* @font-face {
     font-family: 'FuturaFuturis';
     src: url('FuturaFuturisC.eot');
     src: url('FuturaFuturisC.eot?#iefix') format('embedded-opentype'),
@@ -15,9 +15,22 @@
     url('FuturaFuturisC.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
-
+  } */
+  
 @font-face {
+  font-family: 'FuturaFuturis';
+  src: url('FuturaFuturisC_.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaFuturis';
+  src: url('FuturaFuturisC_m.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face {
     font-family: 'Gotham';
     src: url('GothamPro.eot');
     src: url('GothamPro.eot?#iefix') format('embedded-opentype'),
@@ -34,4 +47,17 @@
     url('GothamPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-    }
+    } */
+@font-face {
+  font-family: 'Gotham';
+  src: url('GothamPro_.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('GothamProMed.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

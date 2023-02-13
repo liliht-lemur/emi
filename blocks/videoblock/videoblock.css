@@ -23,6 +23,7 @@
 }
 .videoblock__title {
   margin: 0;
+  font-weight: 400;
   font-size: 36px;
   line-height: 43px;
   text-transform: uppercase;

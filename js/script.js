@@ -38,3 +38,12 @@ $(document).ready(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  $('[data-modal=consultation]').on('click', function(){
+    $('.modal__overlay, #consultation').fadeIn('slow');
+  });
+  $('.modal__close').on('click', function(){
+  $('.modal__overlay, #consultation').fadeOut('slow');
+  });
+});

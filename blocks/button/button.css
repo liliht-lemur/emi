@@ -9,6 +9,7 @@
   text-align: center;
   color: #1D1D1B;
   border: none;
+  cursor: pointer;
 }
 
 .button-content {
