@@ -6,7 +6,7 @@ $(document).ready(function () {
       speed: 1200,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: '<button type="button" class="slick-prev"><img src="../icon/icon-chevron-prev.svg" class="slick-prev__img"></button>',
+      prevArrow: '<button type="button" class="slick-prev"><img src="./icon/icon-chevron-prev.svg" class="slick-prev__img"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="../icon/icon-chevron-next.svg"></button>'
     }
   );
