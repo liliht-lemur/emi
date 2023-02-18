@@ -78,4 +78,7 @@
   .button-mobile {
     display: block;
   }
+  .button-mobile_submit {
+    display: block;
+  }
 }  
