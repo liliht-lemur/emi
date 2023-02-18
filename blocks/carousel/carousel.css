@@ -1,5 +1,4 @@
 .carousel {
-  width: 100%;
 }
 .carousel__inner {
   width: 565px;
@@ -80,3 +79,49 @@
   display: inherit;
   width: 22px;
 }
+
+@media (max-width: 600px) {
+  .carousel__inner {
+    width: 343px;
+    max-height: 255px;
+    overflow: hidden;
+  }
+  .carousel__item {
+    width: 100%;
+    transform: translateY(-29%) scaleY(0.9);
+  }
+  .carousel__inner:nth-child(2n+1).carousel__item {
+    width: 50%;
+    transform: translate(-10%, -29%) scaleY(0.9);
+  }
+  .carousel__item img{
+    overflow-y: hidden;
+  }
+  .slick-dots {
+    bottom: 14.68px;
+    gap: 4.32px;
+  }  
+  .slick-dots button {
+    width: 16.21px;
+    height: 4.32px;
+  }
+  .slick-dots li.slick-active button {
+    width: 32.41px;
+    height: 4.32px;
+  }
+} 
+@media (max-width: 633px) {
+  .carousel__feedback .slick-dots button {
+    width: 16.21px;
+    height: 4.32px;
+  }
+  .carousel__feedback .slick-dots li.slick-active button {
+    width: 32.41px;
+    height: 4.32px;
+  }
+}   
+@media (max-width: 600px) {
+  .carousel__feedback .slick-dots {
+    bottom: -25px;
+  }
+}  

@@ -10,12 +10,28 @@
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
-<body class="root">
+<body class="root"> 
   <div class="white-theme">
     <div class="container">
       <header class="header">
         <a href="#" class="header__logo"><img src="./icon/Лого.svg" alt="Лого" class="header__img"></a>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link headlines">О компании</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Каталог курсов</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Отзывы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Преподаватели</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Трудоустройство</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Медиа</a></li>
+            <li class="menu__item"><a href="#" class="menu__link headlines">Контакты</a></li>
+          </ul>
+        </nav>
         <button class="header__button headlines">Образовательная бьюти-платформа</button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </header>
       <main>
         <section class="hero-screen">
@@ -23,7 +39,7 @@
             <div class="hero-screen-content">
               <p class="hero-screen__subtitle headlines">Пошаговая инструкция с нуля</p>
               <h1 class="hero-screen__title headlines">изучите всё, что нужно знать о мужском ART маникюре <span
-                  class="hero-screen__title hero-screen__title_pink">всего за 1 день</span></h1>
+                  class="hero-screen__title hero-screen__title_pink"><span class="mobile">всего</span> за 1 день</span></h1>
               <p class="hero-screen__text description">Мини-курс для тех, кто хочет освоить специальную технику,
                 которая&nbsp;позволит работать с&nbsp;мужскими руками, расширить клиентскую базу и&nbsp;выйти
                 на&nbsp;новый уровень дохода</p>
@@ -47,6 +63,17 @@
               </div>
             </div>
           </div>
+          <button data-modal="consultation" class="button-mobile headlines">
+            <div class="button-content">
+              <p class="button-content__text">Принять участие</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
           <div class="hero-screen__benefits">
             <div class="hero-screen__item">
               <h4 class="hero-screen__item-title headlines">Сертификат</h4>
@@ -94,24 +121,35 @@
               </button>
             </div>
           </div>
+          <button data-modal="consultation" class="button-mobile headlines">
+            <div class="button-content">
+              <p class="button-content__text">Хочу на курс</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
         </section>
-        <section class="education">
+        <section class="education"> 
           <div class="education__content">
-            <p class="education__subtitle headlines">Мини-курс «Мужской ART маникюр»</p>
+            <p class="education__subtitle headlines"><span class="mobile">Мини-курс</span> «Мужской ART маникюр»</p>
             <h2 class="education__title headlines">ПРОГРАММА ОБУЧЕНИЯ</h2>
-            <p class="education__text description">Чтобы обучение прошло для вас максимально эффективно, курс состоит
+            <p class="education__text description"><span class="mobile">Чтобы обучение прошло для вас максимально эффективно,</span> курс состоит
               из&nbsp;3&nbsp;частей: теоретической, практической и&nbsp;бонусной. Вы&nbsp;поймете все тонкости
-              и&nbsp;ньюансы работы, которые помогут вам стать профи. В&nbsp;бонусной части вас ждет курс по&nbsp;съемке
-              и&nbsp;ретуши фото для соцсетей.</p>
+              и&nbsp;ньюансы работы, которые помогут вам стать профи. <span class="mobile">В&nbsp;бонусной части вас ждет курс по&nbsp;съемке
+                и&nbsp;ретуши фото для соцсетей.</span></p>
           </div>
           <div class="education__benefits">
             <div class="education__item">
               <h4 class="education__item-title headlines">41</h4>
-              <p class="education__item-descr description">инструментов в перечне к курсу</p>
+              <p class="education__item-descr description">инструментов в&nbsp;перечне к курсу</p>
             </div>
             <div class="education__item">
               <h4 class="education__item-title headlines">5</h4>
-              <p class="education__item-descr description">наглядных уроков с практикой</p>
+              <p class="education__item-descr description">наглядных уроков с&nbsp;практикой</p>
             </div>
             <div class="education__item">
               <h4 class="education__item-title headlines">45</h4>
@@ -120,8 +158,8 @@
           </div>
           <div class="education__lesson">
             <div class="plus__wrapper">
-              <h2 class="education__lesson-title headlines"><span>Урок 1-2.</span> Техники выполнения мужского маникюра
-                - 2 варианта
+              <h2 class="education__lesson-title headlines"><span class="uppercase">Урок 1-2.</span> Техники выполнения мужского маникюра
+                <span class="mobile">- 2 варианта</span>
               </h2>
               <div class="closeModal"></div>
             </div>
@@ -132,7 +170,7 @@
                   <p class="lesson-descr description">1 час 38 минут (98 минут)</p>
                 </div>
                 <img src="./images/lesson_1_2.png" alt="lesson_1_2" class="lesson-img">
-                <div class="lesson-resalt">
+                <div class="lesson-result">
                   <h3 class="lesson-title headlines">Результат прохождения:</h3>
                   <p class="lesson-descr description">Вы поймете, как правильно поэтапно делать мужской маникюр и
                     разберете 2 крутых
@@ -154,8 +192,7 @@
           </div>
           <div class="education__lesson">
             <div class="plus__wrapper">
-              <h2 class="education__lesson-title headlines"><span>Урок 3.</span> Мужской маникюр на проблемных<br> руках с
-                безопасной фрезой
+              <h2 class="education__lesson-title headlines"><span class="uppercase">Урок 3.</span> Мужской маникюр на&nbsp;проблемных руках с&nbsp;безопасной фрезой
               </h2>
               <div class="closeModal"></div>
             </div>
@@ -166,9 +203,9 @@
                   <p class="lesson-descr description">29 минут</p>
                 </div>
                 <img src="./images/lesson_3.png" alt="lesson_3" class="lesson-img">
-                <div class="lesson-resalt">
+                <div class="lesson-result">
                   <h3 class="lesson-title headlines">Результат прохождения:</h3>
-                  <p class="lesson-descr description">Вы поймете, как делать мужской маникюр на<br> сложных руках, не
+                  <p class="lesson-descr description">Вы поймете, как делать мужской маникюр на сложных руках, не
                     травмируя клиента.
                   </p>
                 </div>
@@ -184,7 +221,7 @@
           </div>
           <div class="education__lesson">
             <div class="plus__wrapper">
-              <h2 class="education__lesson-title headlines"><span>Урок 4-5.</span> Дизайн на мужских ногтях
+              <h2 class="education__lesson-title headlines"><span class="uppercase">Урок 4-5.</span> Дизайн на мужских ногтях
               </h2>
               <div class="closeModal"></div>
             </div>
@@ -195,7 +232,7 @@
                   <p class="lesson-descr description">21 минута</p>
                 </div>
                 <img src="./images/lesson_4_5.png" alt="lesson_4_5" class="lesson-img">
-                <div class="lesson-resalt">
+                <div class="lesson-result">
                   <h3 class="lesson-title headlines">Результат прохождения:</h3>
                   <p class="lesson-descr description">Узнаете, как и какой дизайн можно сделать мужчине.
                   </p>
@@ -223,10 +260,10 @@
                   <p class="lesson-descr description">112 минут</p>
                 </div>
                 <img src="./images/lesson_plus.png" alt="lesson_plus" class="lesson-img">
-                <div class="lesson-resalt">
+                <div class="lesson-result">
                   <h3 class="lesson-title headlines">Результат прохождения:</h3>
-                  <p class="lesson-descr description">Узнаете, как правильно фотографировать<br> ногти и обрабатывать
-                    фото, чтобы привлекать<br> новых клиентов в соцсетях.
+                  <p class="lesson-descr description">Узнаете, как правильно фотографировать ногти и обрабатывать
+                    фото, чтобы привлекать новых клиентов в соцсетях.
                   </p>
                 </div>
               </div>
@@ -245,13 +282,24 @@
           </div>
           <div class="education__lesson">
             <div class="plus__wrapper">
-              <h2 class="education__lesson-title headlines">Список материалов и инструментов, которые<br> потребуются для
+              <h2 class="education__lesson-title headlines">Список материалов и&nbsp;инструментов, которые потребуются для
                 маникюра
               </h2>
               <div class="closeModal"></div>
             </div>
           </div>
           <button data-modal="consultation" class="button education__button headlines">
+            <div class="button-content">
+              <p class="button-content__text">Хочу на курс</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
+          <button data-modal="consultation" class="button-mobile headlines">
             <div class="button-content">
               <p class="button-content__text">Хочу на курс</p>
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -324,16 +372,16 @@
                   <img src="./icon/icon-globe.svg" alt="Иконка" class="author__item-img">
                   <div class="author__item-info">
                     <h4 class="author__item-title headlines">Сооснователь бренда emi</h4>
-                    <p class="author__item-descr description">2 производства в Европе и России, 120 представительств в
+                    <p class="author__item-descr description">2 производства в Европе и России<span class="mobile">, 120 представительств в
                       33
-                      странах </p>
+                      странах </span></p>
                   </div>
                 </div>
                 <div class="author__item">
                   <img src="./icon/icon-book-open.svg" alt="Иконка" class="author__item-img">
                   <div class="author__item-info">
                     <h4 class="author__item-title headlines">Автор и разработчик</h4>
-                    <p class="author__item-descr description">Уникальных курсов и технологий модного маникюра</p>
+                    <p class="author__item-descr description">Уникальных курсов и технологий<span class="mobile"> модного маникюра</span></p>
                   </div>
                 </div>
                 <div class="author__item">
@@ -358,6 +406,17 @@
               </svg>
             </div>
           </button>
+          <button data-modal="consultation" class="button-mobile headlines">
+            <div class="button-content">
+              <p class="button-content__text">Хочу на курс</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
         </section>
     </div>
     <div class="dark-theme">
@@ -371,6 +430,7 @@
                 тысячи
                 мастеров
                 из&nbsp;разных городов регулярно<br> общаются и&nbsp;повышают квалификацию</p>
+              <p class="privat-club__text_mobile description">При покупке мини-курса сегодня вы на 6 месяцев получите доступ к сообществу, где собраны тысячи мастеров из разных городов.</p>  
               <div class="offers">
                 <p class="offers__subtitle description">Вас ждут:</p>
                 <ul class="offers__list description">
@@ -383,20 +443,23 @@
             <img src="./images/group_photo.png" alt="Групповое фото" class="privat-club__img">
           </div>
           <div class="bonuses">
-            <p class="privat-club__subtitle headlines">Подробнее о бонусах</p>
-            <h2 class="privat-club__title headlines">которые облегчат вашу работу</h2>
+            <p class="privat-club__subtitle bonuses__subtitle headlines">Подробнее о бонусах</p>
+            <h2 class="privat-club__title bonuses__title headlines">которые облегчат вашу работу</h2>
             <div class="bonuses__content">
               <div class="bonus">
                 <div class="bonus__list">
                   <img src="./images/phone.png" alt="Айфон" class="bonus__img_1">
                 </div>
                 <div class="bonus__descr">
-                  <p class="privat-club__subtitle headlines">Бонус 1</p>
-                  <h2 class="privat-club__title headlines">Онлайн-запись</h2>
-                  <p class="privat-club__text description">Бесплатное мульфункциональное<br> приложение с&nbsp;сервисом
+                  <p class="bonus__subtitle headlines">Бонус 1</p>
+                  <h2 class="bonus__title headlines">Онлайн-запись</h2>
+                  <p class="bonus__text description">Бесплатное мульфункциональное<br> приложение с&nbsp;сервисом
                     онлайн-записи,<br>
                     разделом обучения с&nbsp;возможностью смотреть<br> запись всех ваших курсов и&nbsp;чатами
                     по&nbsp;городам.</p>
+                </div>
+                <div class="bonus__list_mobile">
+                  <img src="./images/Free_iPhone_11_Pro_Mockup_3 копия 1.png" alt="Айфон" class="bonus__img_mobile_2">
                 </div>
               </div>
               <div class="bonus">
@@ -404,11 +467,14 @@
                   <img src="./images/Raisa.png" alt="Раиса" class="bonus__img_2">
                 </div>
                 <div class="bonus__descr">
-                  <p class="privat-club__subtitle headlines">Бонус 2</p>
-                  <h2 class="privat-club__title headlines">помощница Раиса</h2>
-                  <p class="privat-club__text description">Помощница, которая 24/7 отвечает людям,<br> продает
+                  <p class="bonus__subtitle headlines">Бонус 2</p>
+                  <h2 class="bonus__title headlines">помощница Раиса</h2>
+                  <p class="bonus__text description">Помощница, которая 24/7 отвечает людям,<br> продает
                     им&nbsp;услугу, записывает на&nbsp;свободную<br> дату, заносит клиентов в&nbsp;ваше расписание<br>
                     и&nbsp;напоминает им&nbsp;о&nbsp;записи.</p>
+                </div>
+                <div class="bonus__list_mobile">
+                  <img src="./images/Mockup - Macbook Pro ^ копия 2.png" alt="Раиса" class="bonus__img_mobile_1">
                 </div>
               </div>
             </div>
@@ -424,10 +490,21 @@
               </svg>
             </div>
           </button>
+          <button data-modal="consultation" class="button-mobile headlines">
+            <div class="button-content">
+              <p class="button-content__text">Получить подарок</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
         </section>
         <section class="feedback">
-          <p class="feedback__subtitle headlines">Подробнее о бонусах</p>
-          <h2 class="feedback__title headlines">которые облегчат вашу работу</h2>
+          <p class="feedback__subtitle headlines">Только реальные отзывы</p>
+          <h2 class="feedback__title headlines">что говорят наши ученики</h2>
           <div class="carousel__feedback">
             <div>
               <div class="feedback__item">
@@ -484,8 +561,18 @@
               </svg>
             </div>
           </button>
+          <button data-modal="consultation" class="button-mobile button-mobile_feedback headlines">
+            <div class="button-content">
+              <p class="button-content__text">Хочу на курс</p>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 15H20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15 9.75L20.25 15L15 20.25" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
         </section>
-
         <section class="application">
           <div class="application__information">
             <div class="wrapper">
@@ -506,7 +593,7 @@
                       a 65,65 0 1,1 130,0
                       a 65,65 0 1,1 -130,0" />
                     </defs>
-                    <text font-size="10">
+                    <text class="headlines" font-size="10" font-weight="400">
                       <textPath xlink:href="#circle" startOffset="0%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
                       <textPath xlink:href="#circle" startOffset="33%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
                       <textPath xlink:href="#circle" startOffset="66%">СТАНЬТЕ ЭКСПЕРТОМ</textPath>
@@ -519,6 +606,8 @@
                 </div>
               </div>
             </div>
+            <p class="application__text_mobile description">Станьте экспертом в сфере мужского art маникюра всего за 1
+              день! Для этого<br> заполните форму и нажмите на кнопку.</p>
             <div class="application__purchase">
               <form class="feed-form" action="#">
                 <div class="feed-form__item">
@@ -553,12 +642,23 @@
                     </svg>
                   </div>
                 </button>
+                <button class="button-mobile_submit headlines">
+                  <div class="button-content">
+                    <p class="button-content__text">Пройти курс</p>
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 15H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M15.75 9.75L21 15L15.75 20.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
               </form>
-              <p class="agreement description">Нажимая на кнопку, я соглашаюсь на обработку Персональных данных и с
-                Правилами пользования Платформой</p>
+              <p class="agreement description">Нажимая на кнопку, я соглашаюсь на обработку <span class="dash">Персональных данных</span> и с
+                <span class="dash">Правилами пользования Платформой</span></p>
             </div>
           </div>
-        </section 
+        </section  
       </main>
         <footer class="footer">
           <div class="footer__wrapper">
@@ -573,106 +673,109 @@
               </div>
               <p class="contact__address description">Москва, Ленинский проспект, дом 6,<br> строение 20</p>
             </div>
-            <nav class="footer__direction">
-              <h2 class="footer__title headlines">Все направления</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Программирование</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Дизайн</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Маркетинг</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Управление</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Игры</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Кино и Музыка</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Психология</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Общее развитие</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Инженерия</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Английский язык</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Другое</a></li>
-              </ul>
-            </nav>
-            <nav class="footer__about">
-              <h2 class="footer__title headlines">Об Emi</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Программирование</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Дизайн</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Маркетинг</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Управление</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Игры</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Кино и Музыка</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Психология</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Общее развитие</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Инженерия</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Английский язык</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Другое</a></li>
-              </ul>
-            </nav>
-            <nav class="footer__vebinar">
-              <h2 class="footer__title headlines">Наши вебинары</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Программирование</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Дизайн</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Маркетинг</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Управление</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Игры</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Кино и Музыка</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Психология</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Общее развитие</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Инженерия</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Английский язык</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Другое</a></li>
-              </ul>
-            </nav>
-            <nav class="footer__useful">
-              <h2 class="footer__title headlines">Полезное</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Медиа</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Партнёрская программа</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Корпоративным<br> клиентам</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Для работодателей</a></li>
-                <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
-                    target="_blank">Реферальная программа</a></li>
-              </ul>
-            </nav>
+            <div class="information">
+              <nav class="footer__direction">
+                <h2 class="footer__title headlines">Все направления</h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Программирование</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Дизайн</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Маркетинг</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Управление</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Игры</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Кино и Музыка</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Психология</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Общее развитие</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Инженерия</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Английский язык</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Другое</a></li>
+                </ul>
+              </nav>
+              <nav class="footer__about">
+                <h2 class="footer__title headlines">Об Emi</h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Программирование</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Дизайн</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Маркетинг</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Управление</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Игры</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Кино и Музыка</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Психология</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Общее развитие</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Инженерия</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Английский язык</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Другое</a></li>
+                </ul>
+              </nav>
+              <nav class="footer__vebinar">
+                <h2 class="footer__title headlines">Наши вебинары</h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Программирование</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Дизайн</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Маркетинг</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Управление</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Игры</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Кино и Музыка</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Психология</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Общее развитие</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Инженерия</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Английский язык</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Другое</a></li>
+                </ul>
+              </nav>
+              <nav class="footer__useful">
+                <h2 class="footer__title headlines">Полезное</h2>
+                <ul class="footer__list">
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Медиа</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Партнёрская программа</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Корпоративным<br> клиентам</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Для работодателей</a></li>
+                  <li class="footer__list-item description"><a href="#" class="footer__link link-hover"
+                      target="_blank">Реферальная программа</a></li>
+                </ul>
+              </nav>
+            </div>
+
           </div>
           <div class="footer__copy">
             <p class="footer__copyright headlines">&#169; Emi 2022</p>
-            <p class="footer__cookie  description">Мы используем файлы cookie для персонализации сервисов и повышения удобства пользования<br> сайтом. Если вы не согласны на их использование, поменяйте настройки браузера.</p>
+            <p class="footer__cookie  description">Мы используем файлы cookie для персонализации сервисов и повышения удобства пользования сайтом. Если вы не согласны на их использование, поменяйте настройки браузера.</p>
           </div>
         </footer>
       </div>
@@ -682,7 +785,7 @@
     <div class="modal__overlay">
       <div id="cosultation" class="modal__form">
         <div class="modal__close">&times;</div>
-        <div class="application__information">
+        <div class="application__information application__information_modal">
           <div class="wrapper">
             <div class="application__content">
               <p class="application__subtitle headlines">Чтобы получить бонусы</p>
@@ -714,6 +817,8 @@
               </div>
             </div>
           </div>
+          <p class="application__text_mobile description">Станьте экспертом в сфере мужского art маникюра всего за 1
+            день! Для этого<br> заполните форму и нажмите на кнопку.</p>
           <div class="application__purchase">
             <form class="feed-form" action="#">
               <div class="feed-form__item">
@@ -755,7 +860,7 @@
         </div>
       </div>
     </div>
-  </aside>
+  </aside>        
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>

@@ -11,7 +11,7 @@
 .container {
   max-width: 1224px;
   margin: 0 auto;
-  /* border: 1px dotted blue; */
+  border: 1px dotted blue;
 }
 .headlines {
   font-family: "FuturaFuturis", Arial, sans-serif;
@@ -22,4 +22,9 @@
 .dark-theme {
   background-color: #1F262D;
   /* border: 2px solid red; */
+}
+@media (max-width: 1224px) {
+  .container {
+    padding: 0 16px;
+  }
 }

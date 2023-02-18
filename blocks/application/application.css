@@ -46,6 +46,9 @@
   color: #1D1D1B;
   /* margin-bottom: 56px; */
 }
+.application__text_mobile {
+  display: none;
+}
 .application__price {
   height: 151px;
   width: 151px;
@@ -75,7 +78,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .application__count {
   margin: 0;
   font-weight: 400;
@@ -97,8 +99,6 @@
   color: #000000;
   align-self: center;
 }
-
-
 .application__purchase {
 }
 .feed-form {
@@ -126,8 +126,6 @@
   line-height: 21px;
   color: #1D1D1B;
 }
-
-
 .feed-form__item .before {
   font-weight: 400;
   font-size: 20px;
@@ -151,6 +149,9 @@
   text-align: left;
   color: #1D1D1B;
 }
+.dash {
+  text-decoration: underline;
+}
 .left {
   width: 40px;
   height: 40px;
@@ -165,3 +166,105 @@
   top: 38px;
   right: 14px;
 }
+.button-mobile_submit {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .feed-form {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .application__price {
+    margin-right: 0;
+  }
+}
+@media (max-width: 880px) {
+  .application__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .application__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .application__count {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+  .application__units {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+}
+@media (max-width: 573px) {
+  .application {
+    padding: 40px 0;
+  }
+  .application__information {
+    background: #F2DDDE;
+    border-radius: 24px;
+    padding: 40px 16px;
+  }
+  .application__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .application__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .application__text {
+    display: none;
+  }
+  .application__text_mobile {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    color: #1D1D1B;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}  
+@media (max-width: 376px) {
+  .application__count {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+  }
+  .application__units {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .application__price {
+    height: 88px;
+    /* width: 125px; */
+    margin-right: 0;
+  }
+  .feed-form__item .before {
+    display: none;
+  }
+  .feed-form__item .after {
+    display: none;
+  }
+  .feed-form__item {
+    width: 311px;
+    height: 56px;
+  }
+  .left {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 7px;
+    left: 14px;
+  }
+  .right {
+    display: none;
+  }
+  .agreement {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+}  

@@ -7,7 +7,15 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       prevArrow: '<button type="button" class="slick-prev"><img src="./icon/icon-chevron-prev.svg" class="slick-prev__img"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="./icon/icon-chevron-next.svg"></button>'
+      nextArrow: '<button type="button" class="slick-next"><img src="./icon/icon-chevron-next.svg"></button>',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false
+          }
+        },
+      ]  
     }
   );
 });
@@ -19,7 +27,15 @@ $(document).ready(function () {
       infinite: true,
       speed: 1200,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]  
     }
   );
 });
@@ -47,3 +63,24 @@ $(document).ready(function () {
   $('.modal__overlay, #consultation').fadeOut('slow');
   });
 });
+
+
+$(document).ready(function () {
+  const menu = document.querySelector('.menu');
+  const hamburger = document.querySelector('.hamburger');
+  const menuItem = document.querySelectorAll('.menu__item');
+
+  hamburger.addEventListener('click', function() {
+      this.classList.toggle('hamburger_active');
+      menu.classList.toggle('menu_active');
+  });
+
+  if (menuItem.length) {
+    menuItem.forEach(item => {
+        item.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('menu_active');
+        });
+    });
+  }
+})

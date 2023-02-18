@@ -5,13 +5,17 @@
   display: flex;
   gap: 24px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #585858;;
+  border-bottom: 1px solid #585858;
 }
 .contacts {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  min-width: 392px;
+  min-width: 364px;
+}
+.information {
+  display: flex;
+  gap: 32px;
 }
 .contact__item {
 }
@@ -98,5 +102,59 @@
   font-size: 14px;
   line-height: 21px;
   color: #F3F4F6;
+  max-width: 689px;
+}
+@media (max-width: 1224px) {
+  .footer__about {
+    min-width: 140px;
+  }
+  .footer__vebinar {
+    min-width: 140px;
+  }
+  .footer__useful {
+    min-width: 140px;
+  }
+  .contacts {
+    min-width: 253px;
+  }
+}
+@media (max-width: 992px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 810px) {
+  .footer__direction {
+    display: none;
+  }
+  .footer__about {
+    display: none;
+  }
+  .footer__vebinar {
+    display: none;
+  }
+  .footer__useful {
+    display: none;
+  }
+  .footer__copy {
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 8px;
+    width: auto;
+  }
+}
+@media (max-width: 376px) {
+  .footer {
+    padding: 56px 0 80px;
+  }
+  .footer__wrapper {
+    padding-bottom: 22px;
+  }
+  .contacts {
+    min-width: 343px;
+  }
+  .footer__copy {
+    max-width: 259px;
+  }
 }
 

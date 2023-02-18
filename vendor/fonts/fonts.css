@@ -9,9 +9,7 @@
   src: url('FuturaFuturisC_m.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
+}@font-face {
   font-family: 'Gotham';
   src: url('GothamPro_.ttf') format('truetype');
   font-weight: 400;

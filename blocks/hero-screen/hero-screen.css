@@ -16,7 +16,7 @@
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 24px;
   color: #BC625C;
 }
 .hero-screen__title {
@@ -56,4 +56,48 @@
   font-size: 16px;
   line-height: 24px;
   color: #1D1D1B;
+}
+@media (max-width: 1223px) {
+  .hero-screen__information {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  .hero-screen__benefits {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-screen {
+    padding: 40px 0;
+  }
+  .hero-screen__subtitle {
+    margin-bottom: 9px;
+  }
+  .hero-screen__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .hero-screen__benefits {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .hero-screen__text {
+    display: none;
+  }
+}  
+@media (max-width: 376px) {
+  .hero-screen__information {
+    gap: 0;
+  }
+  .hero-screen__title span.mobile {
+    display: none;
+  }
+  .hero-screen__text {
+    display: none;
+  }
+  .hero-screen__item-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
