@@ -46,6 +46,7 @@
   bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 .slick-dots li {
   list-style: none;
