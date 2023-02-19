@@ -36,10 +36,8 @@
   color: #FFFFFF; 
   margin-top: 55px;
 }
-
-
 .button-mobile {
-  display: block;
+  display: none;
   background: #FAD1CE;
   border-radius: 56px;
   width: 343px;
@@ -53,6 +51,7 @@
   cursor: pointer;
 }
 .button-mobile_submit {
+  display: none;
   background: #1D1D1B;
   border-radius: 40px;
   width: 311px;
@@ -66,11 +65,6 @@
   cursor: pointer;
   padding: 13px 56px;
 }
-@media (max-width: 1920px) {
-  .button-mobile {
-    display: none;
-  }
-}  
 @media (max-width: 633px) {
   .button {
     display: none;
