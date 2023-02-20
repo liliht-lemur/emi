@@ -48,3 +48,9 @@
     right: -40px;
   }
 }
+@media (max-width: 376px) {
+  .modal__close {
+    top: -33px;
+    right: 0;
+  }
+}

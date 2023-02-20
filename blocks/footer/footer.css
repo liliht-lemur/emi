@@ -142,6 +142,9 @@
     gap: 8px;
     width: auto;
   }
+  .footer__copyright {
+    min-width: 143px;
+  }
 }
 @media (max-width: 376px) {
   .footer {
@@ -154,7 +157,7 @@
     min-width: 343px;
   }
   .footer__copy {
-    max-width: 259px;
+    max-width: 275px;
   }
 }
 

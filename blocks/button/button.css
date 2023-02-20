@@ -54,7 +54,8 @@
   display: none;
   background: #1D1D1B;
   border-radius: 40px;
-  width: 311px;
+  max-width: 311px;
+  width: 100%;
   height: 56px;
   font-weight: 400;
   font-size: 18px;

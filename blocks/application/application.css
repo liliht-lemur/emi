@@ -177,6 +177,10 @@
   .application__price {
     margin-right: 0;
   }
+  .feed-form__item {
+    max-width: 311px;
+    width: 100%;
+  }
 }
 @media (max-width: 880px) {
   .application__title {
@@ -255,7 +259,8 @@
     display: none;
   }
   .feed-form__item {
-    width: 311px;
+    max-width: 311px;
+    width: 100%;
     height: 56px;
   }
   .left {
